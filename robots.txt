@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://manojsahukar.github.io/hawkeye/sitemap.xml
+Sitemap: https://hawkeye.curiosta.com/sitemap.xml
