@@ -246,3 +246,43 @@ tbody th { font-weight: 600; }
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
   .quad > a:hover, .levels a:hover, .card > a:hover, .btn:active { transform: none; }
 }
+
+/* Item points (3-5 sourced points per SWOT item) */
+.points { list-style: none; padding: 0; margin: 1rem 0 1.25rem; max-width: 72ch; }
+.points li { position: relative; padding-left: 1.4rem; margin: 0 0 .8rem; }
+.points li::before { content: ""; position: absolute; left: 0; top: .62em; width: .55rem; height: .55rem; border-radius: 2px; background: var(--qc, var(--teal)); }
+.points strong { color: var(--sea-900); }
+.quote-note { margin: -.75rem 0 1.25rem; max-width: 70ch; }
+.talk { margin: 0 0 1rem; }
+.talk-date { color: var(--muted); font-size: .9rem; }
+
+/* Top contributors (Earth items) */
+.contrib { margin: 1.25rem 0 .5rem; padding: 1.1rem 1.2rem 1rem; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.contrib-head { font: 600 .74rem/1.3 var(--mono); text-transform: uppercase; letter-spacing: .12em; color: var(--qi, var(--sea-500)); margin: 0 0 .25rem; }
+.contrib-metric + .contrib-metric { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: 1rem; }
+.contrib-title { font: 600 1.05rem/1.35 var(--sans); margin: .35rem 0 .6rem; color: var(--ink); }
+.contrib-year { font-weight: 400; color: var(--muted); }
+.cl-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; }
+.cl-level { font: 600 .72rem/1.3 var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin: 0 0 .35rem; }
+.cl { list-style: none; counter-reset: cl; padding: 0; margin: 0; }
+.cl li { counter-increment: cl; display: grid; grid-template-columns: 1.5rem minmax(0, 1fr) auto; grid-template-areas: "n name val" ". bar bar"; align-items: baseline; gap: 2px 8px; padding: .35rem 0; border-bottom: 1px dashed var(--line); font-variant-numeric: tabular-nums; }
+.cl li:last-child { border-bottom: 0; }
+.cl li::before { content: counter(cl); grid-area: n; font: 600 .78rem/1 var(--mono); color: var(--muted); }
+.cl-name { grid-area: name; min-width: 0; }
+.cl-val { grid-area: val; font-weight: 600; white-space: nowrap; }
+.cl-bar { grid-area: bar; height: 5px; border-radius: 3px; background: linear-gradient(90deg, var(--qc, var(--teal)) var(--w), var(--sand) var(--w)); }
+.cl li.cl-world { counter-increment: none; }
+.cl li.cl-world::before { content: "·"; }
+.cl li.cl-world .cl-name { color: var(--ink-2); font-style: italic; }
+.cl li.cl-world .cl-bar { background: linear-gradient(90deg, var(--muted) var(--w), var(--sand) var(--w)); }
+.contrib-note { color: var(--ink-2); font-size: .86rem; margin: .7rem 0 0; max-width: 80ch; }
+@media (max-width: 640px) { .cl-grid { grid-template-columns: 1fr; } .contrib { padding: 1rem; } }
+
+/* Contributes to (continent and country pages) */
+.cb-list { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: 10px; }
+.cb-list li { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.contrib-badge { display: inline-flex; align-items: center; gap: .5rem; padding: .3rem .85rem .3rem .3rem; min-height: 44px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--qc); color: var(--ink); text-decoration: none; font-weight: 600; box-shadow: var(--shadow); }
+.contrib-badge:hover { border-color: var(--qc); color: var(--ink); }
+.cb-q { display: inline-grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 50%; background: var(--qc); color: var(--qt); font: 600 .9rem/1 var(--serif); }
+.cb-detail { color: var(--ink-2); font-size: .92rem; }
+.cl.cl-plain li::before { content: "·"; }
