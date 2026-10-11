@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manojsahukar.github.io/hawkeye/sitemap.xml
