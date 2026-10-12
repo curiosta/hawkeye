@@ -286,3 +286,28 @@ tbody th { font-weight: 600; }
 .cb-q { display: inline-grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 50%; background: var(--qc); color: var(--qt); font: 600 .9rem/1 var(--serif); }
 .cb-detail { color: var(--ink-2); font-size: .92rem; }
 .cl.cl-plain li::before { content: "·"; }
+
+/* ---------- frameworks (CONTENT_PLAN v2) ---------- */
+.fw-tabs { margin: 1.4rem 0 0; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+.fw-tabs ul { list-style: none; padding: 0 0 2px; margin: 0; display: flex; gap: 6px; width: max-content; }
+.fw-tabs a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 1rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.22); color: #eaf4f8; text-decoration: none; font: 600 .82rem/1 var(--mono); letter-spacing: .08em; transition: background .2s, border-color .2s; }
+.fw-tabs a:hover { border-color: var(--teal); color: #fff; background: rgba(255,255,255,.08); }
+.fw-tabs a[aria-current="page"] { background: var(--teal); border-color: var(--teal); color: var(--sea-900); }
+.fw-tabs + .jump ul { margin-top: 1rem; }
+.fw-body { padding-top: 40px; padding-bottom: 24px; }
+.fw-method { padding-top: 2rem; }
+.fw-method > p { max-width: 70ch; }
+.fw-parts { list-style: none; padding: 0; margin: 1.4rem 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 12px; }
+.fw-part { display: flex; gap: 12px; align-items: flex-start; padding: 16px; border-radius: 12px; background: var(--card); border: 1px solid var(--line); }
+.fw-part h3 { font-size: 1.1rem; margin: 0 0 .2rem; }
+.fw-part p { margin: 0; color: var(--ink-2); font-size: .93rem; }
+.fw-key { flex: none; display: inline-grid; place-items: center; min-width: 2.2rem; height: 2.2rem; padding: 0 .4rem; border-radius: 999px; background: var(--sea-700); color: #fff; font: 600 .85rem/1 var(--mono); }
+.fw-list { grid-template-columns: 1fr; max-width: 780px; }
+.fw-rule { padding: 1rem 1.2rem; border-left: 4px solid var(--teal); background: var(--teal-soft); border-radius: 0 12px 12px 0; max-width: 70ch; }
+.also-in { margin: .8rem 0 0; color: var(--ink-2); }
+.also-label { font: 600 .72rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; margin-right: .4rem; }
+.fw-home { list-style: none; padding: 0; margin: 1.2rem 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 170px), 1fr)); gap: 10px; }
+.fw-home a { display: flex; flex-direction: column; gap: .5rem; align-items: flex-start; padding: 16px; border-radius: 12px; background: var(--card); border: 1px solid var(--line); color: var(--ink); text-decoration: none; height: 100%; box-sizing: border-box; }
+.fw-home a:hover { border-color: var(--teal); }
+.fw-home strong { font: 600 1rem/1 var(--mono); letter-spacing: .06em; }
+@media (max-width: 520px) { .fw-tabs a { padding: 0 .7rem; letter-spacing: .04em; } .fw-tabs ul { gap: 5px; } }

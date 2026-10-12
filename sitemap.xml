@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://hawkeye.curiosta.com/</loc></url>
   <url><loc>https://hawkeye.curiosta.com/earth/</loc></url>
+  <url><loc>https://hawkeye.curiosta.com/earth/pestle/</loc></url>
+  <url><loc>https://hawkeye.curiosta.com/earth/gap/</loc></url>
+  <url><loc>https://hawkeye.curiosta.com/earth/tows/</loc></url>
+  <url><loc>https://hawkeye.curiosta.com/earth/soar/</loc></url>
   <url><loc>https://hawkeye.curiosta.com/continents/</loc></url>
   <url><loc>https://hawkeye.curiosta.com/continents/asia/</loc></url>
   <url><loc>https://hawkeye.curiosta.com/continents/asia/india/</loc></url>
