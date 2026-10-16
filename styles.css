@@ -311,3 +311,54 @@ tbody th { font-weight: 600; }
 .fw-home a:hover { border-color: var(--teal); }
 .fw-home strong { font: 600 1rem/1 var(--mono); letter-spacing: .06em; }
 @media (max-width: 520px) { .fw-tabs a { padding: 0 .7rem; letter-spacing: .04em; } .fw-tabs ul { gap: 5px; } }
+
+/* ---------- Hawkeye Play (site layer) ---------- */
+:root { --hk-play-1: #0a3554; --hk-play-2: #c2412d; --hk-play-3: #14866d; --hk-play-bar: #0f6e8c; }
+.js .nojs-only { display: none; }
+.play { padding: 40px 20px 72px; max-width: 860px; }
+.play > section { margin: 0 0 2.4rem; }
+.play h2 { font-size: clamp(1.4rem, 2.6vw, 1.9rem); }
+.play-app { display: block; }
+.play-app[hidden] { display: none; }
+.stage { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.3rem 1.3rem 1rem; margin: 0 0 2rem; box-shadow: var(--shadow); }
+.controls { display: flex; flex-wrap: wrap; gap: .6rem; margin: .8rem 0; }
+.btn[hidden] { display: none; }
+.controls .btn[disabled] { opacity: .45; cursor: not-allowed; }
+.btn:focus-visible, .slider input:focus-visible, details.tbl summary:focus-visible { outline: 3px solid var(--sea-500); outline-offset: 3px; }
+.score { font: 600 .95rem/1.5 var(--mono); color: var(--ink); margin: .4rem 0; }
+.live { min-height: 1.6em; color: var(--ink-2); font-size: .98rem; margin: .4rem 0 .8rem; }
+.slider { display: grid; grid-template-columns: 1fr auto; gap: .2rem .8rem; align-items: center; margin: .7rem 0; max-width: 520px; }
+.slider label { font-weight: 600; grid-column: 1 / -1; }
+.slider input[type=range] { width: 100%; min-height: 44px; accent-color: var(--sea-500); }
+.slider output { font: 700 1rem/1 var(--mono); color: var(--sea-700); min-width: 4.5ch; text-align: right; }
+.pfig { margin: 1rem 0; }
+.pfig figcaption { font-weight: 600; color: var(--ink); margin-bottom: .4rem; }
+.chart { width: 100%; height: auto; display: block; background: var(--card); }
+.chart .ax { stroke: var(--ink-2); stroke-width: 1.2; }
+.chart .grid { stroke: var(--line); stroke-width: 1; }
+.chart .tick, .chart .axl, .chart .lab { font: 500 13px var(--sans); fill: var(--ink-2); }
+.chart .axl { font-weight: 600; }
+.chart .lab { font-weight: 700; fill: var(--ink); }
+.chart .ln { fill: none; stroke-width: 3; stroke-linejoin: round; }
+.chart .ln0 { stroke: var(--hk-play-1); } .chart .ln1 { stroke: var(--hk-play-2); } .chart .ln2 { stroke: var(--hk-play-3); }
+.chart .pt0 { fill: var(--hk-play-1); } .chart .pt1 { fill: var(--hk-play-2); } .chart .pt2 { fill: var(--hk-play-3); }
+.chart .bar { fill: var(--hk-play-bar); }
+details.tbl { margin-top: .5rem; }
+details.tbl summary { cursor: pointer; font-weight: 600; color: var(--sea-500); min-height: 44px; display: flex; align-items: center; }
+.tbl-wrap { overflow-x: auto; }
+table.data { border-collapse: collapse; font-size: .9rem; margin: .4rem 0; min-width: 60%; }
+table.data caption { text-align: left; font-weight: 600; padding: .3rem 0; color: var(--ink-2); }
+table.data th, table.data td { border: 1px solid var(--line); padding: .35rem .6rem; text-align: right; }
+table.data th[scope=row], table.data thead th:first-child { text-align: left; }
+table.data thead th { background: var(--teal-soft); color: var(--ink); }
+.strats { padding-left: 1.2rem; }
+.takeaway { font: 500 1.15rem/1.6 var(--serif); color: var(--ink); background: var(--teal-soft); border-left: 4px solid var(--sea-500); padding: 1rem 1.2rem; border-radius: 0 12px 12px 0; }
+.cites { font-size: .92rem; color: var(--ink-2); }
+.play-real ul, .play-leaves ul { padding-left: 1.2rem; }
+.play-cards { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 2rem; }
+.play-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem; }
+.play-card h2 { font-size: 1.4rem; margin: .2rem 0 .5rem; }
+.play-credit { margin-top: .6rem; }
+@media (max-width: 900px) { .play-cards { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .play-cards { grid-template-columns: 1fr; } .stage { padding: 1rem .9rem; } .play { padding: 28px 16px 56px; } }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
