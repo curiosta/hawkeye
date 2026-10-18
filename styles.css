@@ -362,3 +362,51 @@ table.data thead th { background: var(--teal-soft); color: var(--ink); }
 @media (max-width: 900px) { .play-cards { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 640px) { .play-cards { grid-template-columns: 1fr; } .stage { padding: 1rem .9rem; } .play { padding: 28px 16px 56px; } }
 @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+
+/* ---------- country pages and framework content (Argentina first, Oct 2026) ---------- */
+.table-wrap { position: relative; } /* keeps visually-hidden link text inside the scroll box */
+.kf-block { padding-bottom: 8px; }
+.kf { list-style: none; padding: 0; margin: 1.2rem 0 .9rem; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.kf-item { padding: 16px 18px; border-radius: 12px; background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow); min-width: 0; }
+.kf-label { font: 600 .74rem/1.3 var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--sea-500); margin: 0 0 .3rem; }
+.kf-value { font: 600 clamp(1.4rem, 3vw, 1.8rem)/1.2 var(--serif); color: var(--ink); margin: 0 0 .25rem; }
+.kf-detail { color: var(--ink-2); font-size: .9rem; margin: 0 0 .35rem; }
+.kf-meta { color: var(--ink-2); font-size: .82rem; margin: 0; }
+.swot-note { max-width: 72ch; margin: 0 0 1rem; }
+q[lang="es"] { font-style: italic; }
+.theme-chip { display: inline-block; margin: 0 0 .2rem; padding: .2rem .65rem; border-radius: 999px; border: 1px solid var(--line); background: var(--card); font: 600 .72rem/1.3 var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--sea-500); }
+.fw-sec { padding: 1.6rem 0 .6rem; border-top: 1px solid var(--line); }
+.fw-body > .fw-sec:first-child, .fw-body > .pending + .fw-sec { border-top: 0; }
+.fw-sec > h2 { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; }
+.fw-count { font: 600 .74rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.fw-item, .gap-row, .tows-resp, .soar-card, .tows-cell, .fw-sec { scroll-margin-top: calc(var(--nav-h) + 16px); }
+.fw-item { margin: 1rem 0 1.4rem; }
+.fw-checked { margin: 1.5rem 0 0; max-width: 72ch; }
+.gap-row, .tows-resp, .soar-card { margin: 1rem 0; padding: 18px 20px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); min-width: 0; overflow-wrap: anywhere; }
+.gap-row h3, .tows-resp h3, .soar-card h3 { margin: 0 0 .6rem; font-size: 1.25rem; }
+.gap-dl { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 24px; }
+.gap-cell { min-width: 0; }
+.gap-cell:first-child { grid-column: 1 / -1; }
+.gap-dl dt { font: 600 .72rem/1.3 var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--sea-500); margin: 0 0 .2rem; }
+.gap-dl dd { margin: 0; color: var(--ink); font-size: .96rem; }
+.tows-grid { list-style: none; padding: 0; margin: 1rem 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.tows-cell { padding: 16px; border-radius: 12px; border: 1.5px dashed #d6d0c2; background: var(--sand); min-width: 0; }
+.tows-cell h3 { display: flex; align-items: flex-start; gap: .6rem; margin: 0 0 .5rem; font: 600 1.02rem/1.4 var(--sans); }
+.tows-cell p { margin: 0; }
+.tows-list { list-style: none; padding: 0; margin: 1rem 0; }
+.tows-by { color: var(--ink-2); font-size: .92rem; margin: 0 0 .5rem; }
+.soar-sec > h2 .fw-key { font-size: .85rem; }
+.soar-links { padding-left: 1.2rem; margin: .6rem 0 1rem; }
+.soar-links li { margin: 0 0 .4rem; }
+.soar-card { border-left: 4px solid var(--teal); border-radius: 0 var(--radius) var(--radius) 0; }
+.soar-status { font: 600 .74rem/1.4 var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--sea-500); margin: 0 0 .6rem; }
+.soar-principles { padding-left: 1.5rem; margin: .6rem 0 1rem; }
+.soar-principles li { margin: 0 0 .55rem; }
+@media (max-width: 760px) {
+  .kf { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gap-dl, .tows-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 420px) {
+  .kf { grid-template-columns: 1fr; }
+  .gap-row, .tows-resp, .soar-card { padding: 16px; }
+}
