@@ -1,10 +1,42 @@
-Hawkeye (hawkeye.curiosta.com) - content licence
-================================================
+Hawkeye (hawkeye.curiosta.com)
+==============================
 
 Copyright (c) 2019-2026 Manoj Sahukar.
 
-The original text content of this site (written summaries, page copy and the
-structure of the SWOT analyses) is licensed under the Creative Commons
+This repository contains two kinds of work, under two licences.
+
+1. Site code
+------------
+
+The site code is licensed under the MIT Licence (copyright holder: Manoj
+Sahukar, year 2026). Site code here means the HTML templates, CSS,
+JavaScript (including Hawkeye Play) and other programs used to build or
+run the site.
+
+The full MIT Licence text is in LICENSE-CODE-MIT.txt.
+
+2. Written analysis and other original text
+-------------------------------------------
+
+The original written analysis, page copy and the structure of the SWOT
+and other framework pages are licensed under the Creative Commons
+Attribution 4.0 International licence (CC BY 4.0):
+
+https://creativecommons.org/licenses/by/4.0/
+
+Attribution: "Hawkeye by Manoj Sahukar, hawkeye.curiosta.com, CC BY 4.0".
+
+3. What these licences do not cover
+-----------------------------------
+
+Quotations, talk excerpts and linked videos belong to their authors.
+Third-party data and figures remain subject to the terms of the sources
+credited next to them.
+The self-hosted fonts (Fraunces, Inter and JetBrains Mono) are under the
+SIL Open Font License. The licence text sits with the font files.
+
+The full legal code of CC BY 4.0 follows.
+
 Attribution 4.0 International licence (CC BY 4.0):
 https://creativecommons.org/licenses/by/4.0/
 
