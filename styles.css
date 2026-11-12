@@ -638,3 +638,16 @@ q[lang="es"] { font-style: italic; }
 }
 /* Chinese quotes: use a Simplified Chinese font where one is installed */
 q:lang(zh-Hans) { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
+
+/* Comments (Giscus) on analysis pages */
+.hk-comments { max-width: 860px; }
+.hk-comments, #comments { scroll-margin-top: calc(var(--nav-h) + 16px); }
+.hk-comments > p { color: var(--ink-2); max-width: 70ch; }
+.hk-comments-embed {
+  margin-top: 1rem;
+  padding: 8px 12px 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.hk-comments .giscus, .hk-comments iframe { max-width: 100%; }
