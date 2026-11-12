@@ -30,7 +30,11 @@
   --hk-W: #f2b33d;        --hk-W-ink: #855400;
   --hk-S: var(--sea-500); --hk-S-ink: var(--sea-500);
   --hk-amber-soft: #fbefd6;
+  /* Focus ring (batch 5): the shared --ok token on light surfaces. Contrast 4.10:1 on sand, 4.51:1 on white, 3.86:1 on teal-soft, 3.81:1 on coral-soft. */
+  --hk-focus: var(--ok);
 }
+/* On the dark bands the ring keeps the brand teal (7.07:1 on sea-900, 6.18:1 on sea-800, at least 4.8:1 under the hero glow). --ok there falls to 2.8:1 under the hero glow on phones. */
+.topbar, .hero, .page-hero, .footer, .block.dark { --hk-focus: var(--teal); }
 
 /* Base */
 *, *::before, *::after { box-sizing: border-box; }
@@ -39,7 +43,7 @@ body { margin: 0; font: 17px/1.62 var(--sans); color: var(--ink); background: va
 main { flex: 1; }
 a { color: var(--sea-500); text-underline-offset: 2px; }
 a:hover { color: var(--ink); }
-:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; border-radius: 4px; }
+:focus-visible { outline: 3px solid var(--hk-focus); outline-offset: 2px; border-radius: 4px; }
 img { max-width: 100%; }
 p { margin: 0 0 1em; }
 h1 { font: 600 clamp(2.3rem, 5vw, 4rem)/1.08 var(--serif); margin: 0 0 1rem; max-width: 18ch; letter-spacing: -.01em; }
@@ -332,7 +336,7 @@ tbody th { font-weight: 600; }
 .controls { display: flex; flex-wrap: wrap; gap: .6rem; margin: .8rem 0; }
 .btn[hidden] { display: none; }
 .controls .btn[disabled] { opacity: .45; cursor: not-allowed; }
-.btn:focus-visible, .slider input:focus-visible, details.tbl summary:focus-visible { outline: 3px solid var(--sea-500); outline-offset: 3px; }
+.btn:focus-visible, .slider input:focus-visible, details.tbl summary:focus-visible { outline: 3px solid var(--hk-focus); outline-offset: 3px; }
 .score { font: 600 .95rem/1.5 var(--mono); color: var(--ink); margin: .4rem 0; }
 .live { min-height: 1.6em; color: var(--ink-2); font-size: .98rem; margin: .4rem 0 .8rem; }
 .slider { display: grid; grid-template-columns: 1fr auto; gap: .2rem .8rem; align-items: center; margin: .7rem 0; max-width: 520px; }
