@@ -439,3 +439,5 @@ q[lang="es"] { font-style: italic; }
   .kf { grid-template-columns: 1fr; }
   .gap-row, .tows-resp, .soar-card { padding: 16px; }
 }
+/* Chinese quotes: use a Simplified Chinese font where one is installed */
+q:lang(zh-Hans) { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
