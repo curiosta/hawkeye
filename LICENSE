@@ -40,13 +40,15 @@ The full legal code of CC BY 4.0 follows.
 Attribution 4.0 International licence (CC BY 4.0):
 https://creativecommons.org/licenses/by/4.0/
 
-Not covered by this licence:
+Not covered by the CC BY 4.0 grant:
 - quotations, talk excerpts and linked videos, which belong to their authors;
 - third-party data and figures, which remain subject to the terms of the
   sources credited next to them;
-- the site's code and styling (HTML templates, CSS), whose licence is
-  separate and has not been set, except the Hawkeye Play JavaScript
-  (/play/*.js), which is MIT-licensed (see /play/LICENSE-CODE.txt).
+- the site's code and styling (HTML templates, CSS and JavaScript, including
+  Hawkeye Play), which is licensed under the MIT Licence (see
+  LICENSE-CODE-MIT.txt);
+- the self-hosted fonts, which are under the SIL Open Font License. The
+  licence text sits with the font files.
 
 Attribution: "Hawkeye by Manoj Sahukar, hawkeye.curiosta.com, CC BY 4.0".
 

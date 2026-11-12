@@ -605,6 +605,20 @@ q[lang="es"] { font-style: italic; }
 .tows-cell { padding: 16px; border-radius: 12px; border: 1.5px dashed #d6d0c2; background: var(--sand); min-width: 0; }
 .tows-cell h3 { display: flex; align-items: flex-start; gap: .6rem; margin: 0 0 .5rem; font: 600 1.02rem/1.4 var(--sans); }
 .tows-cell p { margin: 0; }
+.tows-cell-so { border-style: solid; border-left: 4px solid var(--hk-S); }
+.tows-cell-st { border-style: solid; border-left: 4px solid var(--hk-T); }
+.tows-cell-wo { border-style: solid; border-left: 4px solid var(--hk-W); }
+.tows-cell-wt { border-style: solid; border-left: 4px solid var(--hk-T-ink); }
+.tows-analysis-note { padding: 1rem 1.2rem; border: 1.5px solid var(--line); border-left: 4px solid var(--sea-500); border-radius: 12px; background: var(--card); }
+.tows-analysis-note p { margin: .6rem 0 0; color: var(--ink-2); max-width: 70ch; }
+.tows-analysis-note p:first-of-type { margin-top: .55rem; }
+.tows-strats { list-style: none; padding: 0; margin: .6rem 0 0; display: grid; gap: 10px; }
+.tows-strat { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; min-width: 0; }
+.tows-strat h4 { margin: 0; font: 700 1.05rem/1.35 var(--sans); color: var(--ink); }
+.tows-strat p { margin: .45rem 0 0; color: var(--ink); }
+.tows-strat p.small, .tows-pair { color: var(--ink-2); }
+.tows-strat q { font-style: italic; }
+.fw-rule-analysis { padding: 1rem 1.2rem; border-left: 4px solid var(--sea-500); background: var(--card); border: 1px solid var(--line); border-left-width: 4px; border-radius: 0 12px 12px 0; max-width: 70ch; }
 .tows-list { list-style: none; padding: 0; margin: 1rem 0; }
 .tows-by { color: var(--ink-2); font-size: .92rem; margin: 0 0 .5rem; }
 .soar-sec > h2 .fw-key { font-size: .85rem; }
