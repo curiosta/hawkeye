@@ -74,6 +74,12 @@ h1 em, h2 em, h1 .accent { font-style: italic; font-weight: 500; color: var(--te
   .sectionnav { margin-left: -10px; width: calc(100% + 10px); }
   .sectionnav a { padding: 6px 10px; }
 }
+/* Narrow phones (320-380 px): wrap the main nav instead of scrolling sideways */
+@media (max-width: 380px) {
+  :root { --nav-h: 128px; }
+  .sectionnav { overflow-x: visible; }
+  .sectionnav ul { flex-wrap: wrap; row-gap: 4px; }
+}
 
 /* Hero bands (dark sea + soft radial teal and coral) */
 .hero, .page-hero { color: #eaf4f8; background:
@@ -311,6 +317,8 @@ tbody th { font-weight: 600; }
 .fw-home a:hover { border-color: var(--teal); }
 .fw-home strong { font: 600 1rem/1 var(--mono); letter-spacing: .06em; }
 @media (max-width: 520px) { .fw-tabs a { padding: 0 .7rem; letter-spacing: .04em; } .fw-tabs ul { gap: 5px; } }
+/* Narrow phones (320-380 px): wrap the framework tabs instead of scrolling sideways */
+@media (max-width: 380px) { .fw-tabs { overflow-x: visible; } .fw-tabs ul { flex-wrap: wrap; width: auto; } }
 
 /* ---------- Hawkeye Play (site layer) ---------- */
 :root { --hk-play-1: #0a3554; --hk-play-2: #c2412d; --hk-play-3: #14866d; --hk-play-bar: #0f6e8c; }
